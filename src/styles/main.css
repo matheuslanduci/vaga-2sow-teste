@@ -1,0 +1,11 @@
+:root {
+  --primary: #2185d0;
+  --secondary: #000;
+  --background: #f2f2f2;
+  --font-family-primary: "Lato", sans-serif;
+  --font-family-secondary: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: var(--background);
+}

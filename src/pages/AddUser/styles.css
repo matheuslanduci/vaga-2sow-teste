@@ -1,0 +1,32 @@
+#add-user-page {
+  width: 100%;
+}
+
+#add-user-page > .container {
+  margin: 0 auto;
+
+  width: 1088px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1439px) {
+  #add-user-page > .container {
+    margin: 0 auto;
+
+    width: 80%;
+  }
+
+  .fields .field {
+    margin-bottom: 8px !important;
+  }
+}
+
+#add-user-page .container .form-wrapper {
+  margin-top: 140px;
+
+  width: 100%;
+}
+
+.full-width-button button,
+.full-width-button {
+  width: 100%;
+}

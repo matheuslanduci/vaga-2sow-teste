@@ -1,0 +1,91 @@
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 76px;
+
+  background: var(--primary);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.app-header .container {
+  margin: 0 auto;
+
+  width: 1088px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--background);
+}
+
+@media screen and (min-width: 320px) and (max-width: 1439px) {
+  .app-header > .container {
+    width: 80%;
+  }
+}
+
+.app-header .container .logo-text {
+  font-family: var(--font-family-secondary);
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.app-header .container .logo-text-secondary {
+  color: var(--secondary);
+}
+
+.app-header .container .menu {
+  display: flex;
+}
+
+.app-header .container .menu-item {
+  color: var(--background);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.app-header .container .menu-item::after {
+  margin-top: 2px;
+
+  width: 100%;
+  height: 2px;
+
+  display: block;
+
+  background-color: var(--background);
+  content: "";
+  transition: transform 0.4s;
+  transform: scaleX(0);
+}
+
+.app-header .container .menu-item.active::after,
+.app-header .container .menu-item:hover::after {
+  transform: scaleX(1);
+}
+
+.app-header .container .menu-item:nth-child(1) {
+  margin-right: 64px;
+}
+
+.app-header .container .menu-logout {
+  display: flex;
+
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.container .menu-logout svg {
+  margin-left: 8px;
+}
